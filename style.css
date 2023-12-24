@@ -1,0 +1,117 @@
+main{
+    background-color: #faecbe;
+
+}
+#Header {
+    font-size: 70px;
+    font-weight: 900;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif */
+}
+.container {
+    font-family:'Roboto';
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: #6b1010;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    border: #6e6dc2;
+    height:51px;
+    overflow:hidden;
+    margin-left: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 7s infinite;
+}
+
+.first div {
+    color: aliceblue;
+  background-color:#0a7faa;
+}
+.second div {
+    color: #fff;
+  background-color:#c08c25;
+}
+.third div {
+    color: rgb(230, 245, 22);
+  background-color:#e73e3e;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+/* nav */
+body{
+    font-family:Poppins, sans-serif; 
+    margin: 0;
+}
+#Main_Menu{
+    background: #00b894;
+} 
+#Main_Menu ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-align: center;   
+}
+#Main_Menu li{
+    display: inline-block;
+    position: relative;
+}
+#Main_Menu li a{
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration:none;
+}
+#Main_Menu li a:hover{
+     background: #f01111;
+}
+#Main_Menu ul ul{
+    position: absolute;
+    left: 0px;;
+    top:48px;
+    background: #6dc2b2;
+    width: 200px;
+    display: none;
+    z-index: 999 px;
+}
+#Main_Menu ul ul li{
+    display: block;
+}
+#Main_Menu ul li:hover ul {
+    display: block;
+}
+#Main_Menu ul li:hover a {
+background: #f01111;
+}
+#Main_Menu ul li:hover li a {
+    background: #6dc2b2;
+}
+#Main_Menu ul ul li a:hover {
+    background:#d1395a;
+}
